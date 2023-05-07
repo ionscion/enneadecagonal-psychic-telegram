@@ -32,8 +32,8 @@ module.exports = () => {
         description: "A simple PWA application",
         background_color: "#ffffff",
         theme_color: "#2196f3",
-        start_url: "/",
-        publicPath: "/",
+        start_url: "./",
+        publicPath: "./",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
