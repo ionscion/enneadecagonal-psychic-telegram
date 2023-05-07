@@ -12,6 +12,7 @@ module.exports = () => {
     entry: {
       main: "./src/js/index.js",
       install: "./src/js/install.js",
+      editor: "./src/js/editor.js",
     },
     output: {
       filename: "[name].bundle.js",
@@ -28,10 +29,12 @@ module.exports = () => {
       }),
       new WebpackPwaManifest({
         name: "Progressive Web Application",
+        fingerprints: false,
+        inject: true,
         short_name: "PWA",
         description: "A simple PWA application",
-        background_color: "#ffffff",
-        theme_color: "#2196f3",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
         start_url: "./",
         publicPath: "./",
         icons: [
