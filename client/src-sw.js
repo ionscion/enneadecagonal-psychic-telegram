@@ -5,11 +5,9 @@ const { CacheableResponsePlugin } = require("workbox-cacheable-response");
 const { ExpirationPlugin } = require("workbox-expiration");
 const { precacheAndRoute } = require("workbox-precaching/precacheAndRoute");
 
-try {
-  precacheAndRoute(self.__WB_MANIFEST);
-} catch (error) {
-  console.error("Error precaching assets:", error);
-}
+
+precacheAndRoute(self.__WB_MANIFEST);
+
 
 const pageCache = new CacheFirst({
   cacheName: "page-cache",
