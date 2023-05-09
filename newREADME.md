@@ -14,7 +14,10 @@ This is a text editor application that allows users to create and save notes. It
 
 
 ## Developer Notes
-TBD
+This application requires a .npmrc file with the following information:
+- 'production=false'
+- 'progress=false'
+Without this file, the application will not run properly and will not be able to be deployed to Heroku.
 
 ## Installation (for local use)
 - Clone the repository
@@ -28,7 +31,7 @@ TBD
 - To install the application locally, click the install button in the address bar of your browser
 
 ## Screenshot of Deployed Application
-TBD
+![Screenshot of Deployed Application](./Assets/ancient-earth-71719.herokuapp.com_.png)
 
 ## Questions
 - If you have any questions about this repository, please contact me at https://github.com/ionscion
