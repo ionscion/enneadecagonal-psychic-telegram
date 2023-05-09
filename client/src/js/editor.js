@@ -1,7 +1,7 @@
-// Import methods to save and get data from the indexedDB database in './database.js'
+
 import { getDb, putDb } from "./database";
 import { header } from "./header";
-// import { v4 as uuidv4 } from "uuid";
+
 
 export default class {
   constructor() {
